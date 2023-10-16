@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简易灯箱画廊设计</title>
+    <style type="text/css">
+        body{background-color: rgb(103, 214, 177);}
+        
+        #pic{margin: 0 auto; ; color: blue;}
+        #see{position: absolute;left: 380px;top: 250px;align-items: center;}
+
+        ul{list-style: none;list-style-position: outside;text-align: center;}
+        li{float: left;}
+
+        img{width: 150px; height: 100px;}
+        
+        a{margin: 0 10px;}
+        a:hover{color: red;line-height: 40px;border-bottom: 3px solid red;}
+    </style>
+</head>
+
+<body>
+
+    <div id="a">
+        <h2 align="center"><font color="white">简易灯箱画廊设计</font></h2>
+        <hr size="3" color="red"/>
+
+        <div id="pic">
+            <ul>
+               <li>T1<br><a href="trees/t1.jpg" target="fudong"><img id="img1" src="trees/t1.jpg" ></a></li>
+               <li>T2<br><a href="trees/t2.jpg" target="fudong"><img id="img2" src="trees/t2.jpg" ></a></li> 
+               <li>T3<br><a href="trees/t3.jpg" target="fudong"><img id="img3" src="trees/t3.jpg" ></a></li> 
+               <li>T4<br><a href="trees/t4.jpg" target="fudong"><img id="img4" src="trees/t4.jpg" ></a></li> 
+               <li>T5<br><a href="trees/t5.jpg" target="fudong"><img id="img5" src="trees/t5.jpg" ></a></li> 
+               <li>T6<br><a href="trees/t6.jpg" target="fudong"><img id="img6" src="trees/t6.jpg" ></a></li> 
+            </ul>
+        </div>
+
+        <div id="see">
+            <iframe src="trees/t1.jpg" name="fudong" width="390px" height="260px"  scrolling = "no"></iframe>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
