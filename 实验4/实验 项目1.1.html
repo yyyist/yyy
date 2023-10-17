@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DIV+CSS页面布局设计</title>   
+    <style type="text/css">
+        #head{
+            background-color: rgba(202, 245, 138, 0.797);
+            height: 50px;}
+        #daohang{
+            margin-top: 4px; 
+            background-color: rgba(202, 245, 138, 0.797); }
+        #zhongjian{
+            margin-top: 4px; 
+            
+        }
+        #zhuti{ 
+            margin-right: 4px;
+            margin-bottom: 4px;
+            height: 200px;
+            float: left;
+            background-color: rgba(243, 245, 138, 0.797);
+            width: 69.5%;}
+        #youce{
+            margin-bottom: 5px;
+            height: 200px;
+            float: left;
+            background-color: rgba(245, 213, 138, 0.797);
+            width: 30%;}
+        #banquan{  
+            clear: both ;
+            background-color: rgba(202, 245, 138, 0.797);
+            height: 50px;}
+    </style>
+</head>
+<body>
+    <div id="head">
+        <font size="4"><strong>这里是头部信息区</strong></font>
+    </div>
+    <div id="daohang">
+        <font size="4"><strong>这里是导航信息区</strong></font>
+    </div>
+    <div id="zhongjian">
+        <div id="zhuti">
+            <font size="4"><strong>这里是主体信息区</strong></font>
+        </div>
+        <div id="youce">
+            <font size="4"><strong>这里是右侧信息区</strong></font>
+        </div>
+    </div>
+    <div id="banquan">
+        <font size="4"><strong>这里是版权信息区</strong></font>
+    </div>
+</body>
+</html>

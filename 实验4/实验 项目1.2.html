@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DIV+CSS页面布局设计</title> 
+    <style type="text/css">
+        #head{
+            background-color: rgba(138, 193, 239, 0.9);
+            height: 50px;
+            margin-bottom: 3px;}
+        #zuoce{
+            background-color: rgba(138, 236, 239, 0.9);
+            float: left;
+            height: 700px;
+            margin-right: 3px;
+            width: 200px;
+        }
+        #youce{
+            background-color: rgba(176, 232, 250, 0.795);
+            float: left;
+            height: 700px;
+            width: 500px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <font size="4"><strong>这里是头部信息区</strong></font>
+    </div>
+    <div id="main">
+        <div id="zuoce">
+            <font size="4"><strong>这里是左侧信息区</strong></font>
+        </div>
+        <div id="youce">
+            <font size="4"><strong>2列固定宽度左窄右宽型+头部</strong></font>
+        </div>
+    </div>
+    
+</body>
+</html>
