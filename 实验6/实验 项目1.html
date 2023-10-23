@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>留言板设计</title>
+    <style>
+        ul {
+            color: blue;
+        }
+
+        .a {
+            color: green;
+            font-weight: bold;
+        }
+
+        #all {
+            background-color: rgba(158, 225, 249, 0.285);
+            height: 550px;
+            width: 900px;
+            margin: 30px auto;
+            padding: 20px 10px;
+            border-style: solid;
+            border-width: 10px;
+            border-color: rgba(128, 128, 128, 0.559);
+        }
+
+        #word {
+            float: left;
+        }
+
+        #word2 {
+            padding-top: 25px;
+        }
+
+        #email {
+            width: 340px;
+        }
+
+        #a1 {
+            width: 50px;
+        }
+
+
+        #reset {
+            margin: 0 15px;
+        }
+
+        table {
+            margin: 30px auto;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all">
+
+        <div id="word">
+            <p align="left">
+                <font color="blue" size="6"><strong>留言板</strong></font>
+            </p>
+        </div>
+        <div id="word2">
+            <p align="right">
+                <font color="blue"><strong>科技工作者建言</strong></font>
+            </p>
+        </div>
+
+        <hr color="white" height="8px" width="100%">
+        <table rules="all" frame="border" align="center" bordercolor="white" border="3">
+            <tr>
+                <td colspan="2">
+                    <font color="red">发表留言</font>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="a" align="center">姓&nbsp;&nbsp;&nbsp;&nbsp;名:</td>
+                <td>
+                    <form>
+                        <input type="text" name="name">
+                    </form>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="a" align="center">电子邮件:</td>
+                <td>
+                    <form>
+                        <input type="text" name="email" id="email">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="a" align="center">分&nbsp;&nbsp;&nbsp;&nbsp;类:</td>
+                <td>
+                    <form>
+                        <strong>
+                            <font color="red">科技工作者建言
+                                <input type="radio" name="jianyan" value="no">不保密
+                                <input type="radio" name="jianyan" value="yes">保密
+                                留言类型：<select name="leixin" id="a1">
+                                </select>
+                            </font>
+                        </strong>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="a" align="center">留&nbsp;&nbsp;&nbsp;&nbsp;言:</td>
+                <td>
+                    <form>
+                        <textarea name="liuyan" rows="10" cols="2"></textarea>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <font color="blue"> 注：如果您的留言不便公开，请选择"保密"选项，
+                        提交后可凭系统反馈给您的留言编号、查询密码和
+                        您的姓名查询回复。</font>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <form>
+                        <input type="submit" name="submit" value="提交">
+                        <input type="reset" name="reset" value="清空" id="reset">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <font color="blue">
+                        <ul type="disc">
+                            <li>请遵守国家有关法律、法规，尊重网上道德，承担一切因您的行为而直接或间接引起的法律责任。</li>
+                            <li>本网站拥有管理笔名和留言的一切权利。</li>
+                        </ul>
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
